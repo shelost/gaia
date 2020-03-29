@@ -1,0 +1,160 @@
+:root{
+
+    --border-rad: 1vw;
+}
+
+.map{
+
+    width: 60vw;
+    height: 40vw;
+    margin: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    background-image: url('background-01.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 56vw;
+    background-color: black;
+
+    border-radius: var(--border-rad) 0 0 var(--border-rad);
+}
+
+.hidden{
+
+    display: none;
+}
+
+body{
+
+    font-family: Avenir, sans-serif;
+}
+
+#select{
+
+    background-color: black;
+    color: white;
+    width: 5vw;
+    height: 3vw;
+    font-size: 1vw;
+}
+
+#select option{
+
+    background-color: red;
+}
+
+*:focus{
+
+    outline: none;
+}
+
+#box{
+
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    margin: none;
+}
+
+#textbox{
+    background-color: #D0D0D0;
+    flex: 3;
+    margin: none;
+    padding: 2vw;
+    border-radius: 0 var(--border-rad) 0 0;
+
+}
+
+#yearbox{
+
+    background-color: #909090;
+    width: 20vw;
+    margin: none;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    border-radius: 0 0 var(--border-rad) 0;
+
+    flex: 1;
+}
+
+#title{
+
+    font-size: 2vw;
+}
+
+#dates{
+
+    font-size: 1vw;
+}
+
+#info{
+
+    font-size: 1vw;
+}
+
+.main{
+
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.maintitle{
+
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 1vw;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    font-family: 'IM Fell French Canon SC', serif;
+    border-radius: var(--border-rad);
+}
+
+.red{
+
+    fill: red;
+}
+
+.red:hover{
+
+    fill: #B90000;
+}
+
+.yellow{
+
+    fill: #ffce00;
+}
+
+.yellow:hover{
+
+    fill: #B38F00;
+}
+
+.green{
+
+    fill: #53DC00;
+}
+
+.green:hover{
+
+    fill: #44B300;
+}
+
+.blue{
+
+    fill: #0087FF;
+}
+
+.blue:hover{
+
+    fill: #004BE1;
+}
+
+
