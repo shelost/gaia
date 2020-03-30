@@ -21,11 +21,21 @@ var Dates = Id('dates')
 var Info = Id('info')
 var Select = Id('select')
 
+var Slider = Id('slider')
+Slider.step = "100"
+
+var YearText = Id('year')
+
 var Year = 2020
 
 const loop = () => {
 
-    Year = Select.value
+    Year = Slider.value
+    
+    if (Slider.value < 1800){
+
+        Slider.value = 1700
+    }
 
     for (let v=0;v<Maps.length;v++){
 
@@ -35,13 +45,17 @@ const loop = () => {
         }else{
     
             Maps[v].classList.add('hidden')
+
         }
     }
+
+    YearText.innerHTML = Year
+
 }
 
 setInterval(loop, 1000/60)
 
-var list = [...yellow, ...blue, ...red, ...green]
+var list = [...Class('yellow'), ...Class('blue'), ...Class('red'), ...Class('green'), ...Class('pink'), ...Class('orange')]
 
 for (let i=0; i<list.length;i++){
 
@@ -60,6 +74,9 @@ for (let i=0; i<list.length;i++){
                 break
             case 'PHILIPPINES':
                 name = 'THE PHILIPPINES'
+                break
+            case 'KINGDOM ITALY':
+                name = 'KINGDOM OF ITALY'
                 break
         }
 

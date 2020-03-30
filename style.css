@@ -73,11 +73,70 @@ body{
     width: 20vw;
     margin: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
     vertical-align: center;
     border-radius: 0 0 var(--border-rad) 0;
 
     flex: 1;
+}
+
+#year{
+
+    font-size: 2vw;
+    background-color: #D0D0D0;
+    width: fit-content;
+    margin: auto;
+    padding: 0.5vw;
+    border-radius: var(--border-rad);
+}
+
+#slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 80%; /* Full-width */
+    height: 0.8vw; /* Specified height */
+    border-radius: 0.5vw;
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    margin: auto;
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin-bottom: 2vw;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 1.5vw; /* Set a specific slider handle width */
+    height: 1.5vw; /* Slider handle height */
+    background: red; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 1.5vw;
+
+    transition: 0.2s ease;
+}
+
+#slider::-webkit-slider-thumb:hover{
+
+    background: #9D1C00;
+}
+  
+#slider::-moz-range-thumb {
+    width: 1.5vw; /* Set a specific slider handle width */
+    height: 1.5vw; /* Slider handle height */
+    background: red; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 1.5vw;
+
+    transition: 0.2s ease;
+}
+
+#slider::-moz-range-thumb:hover{
+
+    background: #9D1C00;
 }
 
 #title{
@@ -118,43 +177,48 @@ body{
 }
 
 .red{
-
     fill: red;
 }
-
 .red:hover{
-
-    fill: #B90000;
+    fill: #9D1C00;
 }
 
 .yellow{
-
     fill: #ffce00;
 }
-
 .yellow:hover{
-
     fill: #B38F00;
 }
 
 .green{
-
     fill: #53DC00;
 }
-
 .green:hover{
-
-    fill: #44B300;
+    fill: #008708;
 }
 
 .blue{
-
     fill: #0087FF;
 }
-
 .blue:hover{
+    fill: #0057DD;
+}
 
-    fill: #004BE1;
+.orange{
+    fill: #FF8B00;
+}
+.orange:hover{
+
+    fill: #AB3E00;
+}
+
+.pink{
+
+    fill: #FF3AD8;
+}
+.pink:hover{
+
+    fill: #A40083;
 }
 
 
